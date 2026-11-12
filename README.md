@@ -23,5 +23,3 @@ Open [the dashboard](http://127.0.0.1:8000/) or [the API documentation](http://1
 ## Data and scope
 
 The measured steel and compressor data validate forecasting on their own test periods. Operating optimization, cost estimates, anomaly demonstrations, and feedback control use simulation. See the [measured-data guide](docs/REAL-DATA-BENCHMARKS.md) for sources, attribution, and training steps.
-
-This project builds on [Kaviyathamizhan/EnergyOpt](https://github.com/Kaviyathamizhan/EnergyOpt). See [upstream provenance](UPSTREAM.md) for the source revision and licensing details.
