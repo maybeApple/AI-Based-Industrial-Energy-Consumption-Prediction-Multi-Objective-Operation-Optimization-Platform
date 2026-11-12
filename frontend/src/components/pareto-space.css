@@ -1,0 +1,34 @@
+.pareto-camera { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.industrial-app .pareto-camera button { padding: 6px 9px; font-size: 11px; }
+.pareto-scene { display: block; width: 100%; background: radial-gradient(ellipse at center, #132732, #0d1822 78%); border: 1px solid #283e4b; border-radius: 8px; cursor: grab; touch-action: none; user-select: none; }
+.pareto-scene:active { cursor: grabbing; }
+.pareto-grid { pointer-events: none; }
+.pareto-grid polygon { fill: #172d38; fill-opacity: .6; }
+.pareto-grid line { stroke: #35505d; stroke-opacity: .7; stroke-width: 1; }
+.pareto-grid .pareto-grid-edge { stroke-dasharray: 4 5; }
+.pareto-axis { pointer-events: none; font-size: 13px; font-variant-numeric: tabular-nums; }
+.pareto-axis line { stroke-width: 1.5; }
+.pareto-axis .pareto-axis-name { font-size: 17px; font-weight: 700; paint-order: stroke; stroke: #0d1822; stroke-width: 4px; }
+.pareto-drop { pointer-events: none; stroke: #c8b7ff; stroke-width: 1.3; stroke-dasharray: 4 4; }
+.pareto-marker { cursor: pointer; outline: none; }
+.pareto-hit { fill: transparent; }
+.pareto-marker > :not(.pareto-hit) { pointer-events: none; }
+.pareto-candidate { fill: #5cd9b8; stroke: #14352e; stroke-width: 1.1; }
+.pareto-marker:hover .pareto-candidate, .pareto-marker:focus-visible .pareto-candidate { fill: #e8fff8; }
+.pareto-recommended { fill: #ffca79; stroke: #452b12; stroke-width: 1; }
+.pareto-selection { stroke: #cfbeff; stroke-width: 2; fill: none; }
+.pareto-axis-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; color: #9bb0c0; font-size: 11px; margin: 12px 0; }
+.pareto-axis-legend strong { color: var(--axis-color); }
+.pareto-readout { display: flex; flex-wrap: wrap; gap: 4px 12px; padding: 8px 10px; margin-bottom: 8px; background: #172733; border-radius: 5px; color: #bdd1df; font-size: 12px; font-variant-numeric: tabular-nums; }
+.pareto-readout strong { color: #ebd3a8; }
+.industrial-app .reference-settings { border-top: 1px solid var(--border); padding-top: 12px; }
+.industrial-app .reference-settings summary { cursor: pointer; color: #b9d0de; font-size: 12px; }
+.industrial-app .reference-settings summary:focus-visible { outline: 2px solid var(--mint); outline-offset: 4px; }
+.industrial-app .reference-fields { grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 14px 0 0; }
+.industrial-app .equal-output { border-top: 2px solid #4bbba4; }
+.industrial-app .equal-output p strong { color: #9ee6d0; }
+@media (max-width: 520px) {
+  .industrial-app .reference-fields { grid-template-columns: 1fr; }
+  .pareto-axis { font-size: 16px; }
+  .pareto-axis .pareto-axis-name { font-size: 19px; }
+}

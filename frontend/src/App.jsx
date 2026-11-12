@@ -1,7 +1,8 @@
 import React from 'react';
-import Dashboard from './pages/Dashboard';
+import Dashboard from './pages/IndustrialDashboard';
 import './index.css';
+import { WorkspaceProvider } from './components/WorkspaceState';
 
 export default function App() {
-  return <Dashboard />;
+  return <WorkspaceProvider><Dashboard /></WorkspaceProvider>;
 }

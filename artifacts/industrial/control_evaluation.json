@@ -1,0 +1,81 @@
+{
+  "source": "synthetic_dynamic_plant",
+  "model_sha256": "e30ef9835eba4d5332038255d007ab2eae94cdfa3027cac84035be967b36be46",
+  "results": [
+    {
+      "seed": 7,
+      "ann_mpc": {
+        "tracking_mae": 0.40988208495570905,
+        "total_energy_kwh": 901.3076195871898,
+        "total_units": 233.9628717338589,
+        "total_cost": 1032.759156413043,
+        "energy_violations": 0,
+        "temperature_violations": 0,
+        "max_process_temperature": 49.789951549508785,
+        "within_10_percent_target": 0.9722222222222222,
+        "predicted_infeasible_steps": 0
+      },
+      "fixed_commands": {
+        "tracking_mae": 7.095392738493201,
+        "total_energy_kwh": 754.5483652637382,
+        "total_units": 173.1414653535612,
+        "total_cost": 783.4366940602213,
+        "energy_violations": 0,
+        "temperature_violations": 0,
+        "max_process_temperature": 44.54932242906908,
+        "within_10_percent_target": 0.2777777777777778,
+        "predicted_infeasible_steps": 0
+      }
+    },
+    {
+      "seed": 42,
+      "ann_mpc": {
+        "tracking_mae": 0.4462704320508164,
+        "total_energy_kwh": 895.7335029993675,
+        "total_units": 233.07186571799687,
+        "total_cost": 1024.4117711395356,
+        "energy_violations": 0,
+        "temperature_violations": 0,
+        "max_process_temperature": 49.98850540658276,
+        "within_10_percent_target": 0.9722222222222222,
+        "predicted_infeasible_steps": 0
+      },
+      "fixed_commands": {
+        "tracking_mae": 7.155814059535822,
+        "total_energy_kwh": 753.9113827308012,
+        "total_units": 172.5976734641776,
+        "total_cost": 782.9072183477963,
+        "energy_violations": 0,
+        "temperature_violations": 0,
+        "max_process_temperature": 44.712305976975784,
+        "within_10_percent_target": 0.2777777777777778,
+        "predicted_infeasible_steps": 0
+      }
+    },
+    {
+      "seed": 99,
+      "ann_mpc": {
+        "tracking_mae": 0.4105898180792587,
+        "total_energy_kwh": 887.2522257211768,
+        "total_units": 233.61590384523424,
+        "total_cost": 1034.7948975389545,
+        "energy_violations": 0,
+        "temperature_violations": 0,
+        "max_process_temperature": 49.99519377417166,
+        "within_10_percent_target": 0.9722222222222222,
+        "predicted_infeasible_steps": 0
+      },
+      "fixed_commands": {
+        "tracking_mae": 7.088721042630894,
+        "total_energy_kwh": 753.9525472628653,
+        "total_units": 173.20151061632194,
+        "total_cost": 782.8747766695878,
+        "energy_violations": 0,
+        "temperature_violations": 0,
+        "max_process_temperature": 44.671608676755376,
+        "within_10_percent_target": 0.2777777777777778,
+        "predicted_infeasible_steps": 0
+      }
+    }
+  ]
+}

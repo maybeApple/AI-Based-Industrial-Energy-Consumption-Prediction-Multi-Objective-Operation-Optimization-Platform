@@ -1,0 +1,26 @@
+{
+  "mae_kwh": 4.277106841149969,
+  "rmse_kwh": 8.698102876511742,
+  "r2": 0.9232347648503682,
+  "source": "UCI Steel Industry Energy Consumption",
+  "rows": 35040,
+  "train_rows": 27955,
+  "test_rows": 6989,
+  "split": "chronological 80% train / 20% test; rolling one-step evaluation",
+  "features": [
+    "hour",
+    "minute",
+    "weekday",
+    "lag_1",
+    "lag_4",
+    "lag_96",
+    "rolling_96",
+    "power_factor_previous"
+  ],
+  "horizon_minutes": 15,
+  "baseline_mae_kwh": 5.482202031764201,
+  "training_end": "2018-10-20 04:30:00",
+  "test_start": "2018-10-20 04:45:00",
+  "sha256": "9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc",
+  "note": "Previous observed readings update each step; not a 24-hour open-loop forecast."
+}

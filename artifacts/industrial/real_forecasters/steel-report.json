@@ -1,0 +1,215 @@
+{
+  "source": "https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption",
+  "license": "CC BY 4.0",
+  "horizon_minutes": 15,
+  "raw_rows": 35040,
+  "source_sha256": "9b1cee6f9cb9cd9df2b95814ca90a9a2ff15b7f5f1fba0fae3c643e82072eacc",
+  "split": {
+    "initial_training_rows": 24460,
+    "validation_rows": 3495,
+    "refit_rows": 27955,
+    "test_rows": 6989,
+    "validation_start": "2018-09-13 19:00:00",
+    "training_end": "2018-10-20 04:30:00",
+    "test_start": "2018-10-20 04:45:00",
+    "test_end": "2018-12-31 23:45:00"
+  },
+  "model_selection": "Lowest validation MAE, then refit on all pre-test records.",
+  "selected_recipe": {
+    "inputs": "recent_and_calendar",
+    "objective": "regression_l1",
+    "model_weight": 1.0,
+    "mae_kwh": 3.7941007107010325,
+    "rmse_kwh": 8.994652107690964,
+    "r2": 0.9082389561028807
+  },
+  "features": [
+    "hour",
+    "minute",
+    "weekday",
+    "lag_1",
+    "lag_2",
+    "lag_3",
+    "lag_4",
+    "lag_8",
+    "lag_16",
+    "lag_96",
+    "rolling_4",
+    "rolling_std_4",
+    "rolling_8",
+    "rolling_std_8",
+    "rolling_16",
+    "rolling_std_16",
+    "rolling_96",
+    "rolling_std_96",
+    "power_factor_previous",
+    "power_factor_change",
+    "leading_pf_previous",
+    "leading_pf_change",
+    "lagging_reactive_previous",
+    "lagging_reactive_change",
+    "leading_reactive_previous",
+    "leading_reactive_change"
+  ],
+  "legacy_validation": {
+    "mae_kwh": 4.039508753886209,
+    "rmse_kwh": 8.915109773951094,
+    "r2": 0.9098547194241167
+  },
+  "validation_candidates": [
+    {
+      "inputs": "persistence",
+      "objective": null,
+      "model_weight": 0,
+      "mae_kwh": 5.207150214592275,
+      "rmse_kwh": 11.928225943663632,
+      "r2": 0.8386231186482614
+    },
+    {
+      "inputs": "recent",
+      "objective": "regression",
+      "model_weight": 1.0,
+      "mae_kwh": 4.155469898755333,
+      "rmse_kwh": 9.218255687667336,
+      "r2": 0.9036199594664873
+    },
+    {
+      "inputs": "recent",
+      "objective": "regression",
+      "model_weight": 0.75,
+      "mae_kwh": 4.192601042017649,
+      "rmse_kwh": 9.354189973353634,
+      "r2": 0.9007565219527733
+    },
+    {
+      "inputs": "recent",
+      "objective": "regression",
+      "model_weight": 0.5,
+      "mae_kwh": 4.394723671833091,
+      "rmse_kwh": 9.893568509156225,
+      "r2": 0.8889814539166689
+    },
+    {
+      "inputs": "recent",
+      "objective": "regression_l1",
+      "model_weight": 1.0,
+      "mae_kwh": 3.9970317972064846,
+      "rmse_kwh": 9.36160503733703,
+      "r2": 0.9005991190318726
+    },
+    {
+      "inputs": "recent",
+      "objective": "regression_l1",
+      "model_weight": 0.75,
+      "mae_kwh": 4.137778406536544,
+      "rmse_kwh": 9.63136308080286,
+      "r2": 0.8947880391320023
+    },
+    {
+      "inputs": "recent",
+      "objective": "regression_l1",
+      "model_weight": 0.5,
+      "mae_kwh": 4.406736995842745,
+      "rmse_kwh": 10.177334833604741,
+      "r2": 0.8825216791014436
+    },
+    {
+      "inputs": "recent_and_calendar",
+      "objective": "regression",
+      "model_weight": 1.0,
+      "mae_kwh": 3.931896795720467,
+      "rmse_kwh": 8.663903707616305,
+      "r2": 0.9148632949459113
+    },
+    {
+      "inputs": "recent_and_calendar",
+      "objective": "regression",
+      "model_weight": 0.75,
+      "mae_kwh": 3.992238243736995,
+      "rmse_kwh": 8.87536719184589,
+      "r2": 0.9106566435444986
+    },
+    {
+      "inputs": "recent_and_calendar",
+      "objective": "regression",
+      "model_weight": 0.5,
+      "mae_kwh": 4.243167851647781,
+      "rmse_kwh": 9.550480215843447,
+      "r2": 0.896547730361086
+    },
+    {
+      "inputs": "recent_and_calendar",
+      "objective": "regression_l1",
+      "model_weight": 1.0,
+      "mae_kwh": 3.7941007107010325,
+      "rmse_kwh": 8.994652107690964,
+      "r2": 0.9082389561028807
+    },
+    {
+      "inputs": "recent_and_calendar",
+      "objective": "regression_l1",
+      "model_weight": 0.75,
+      "mae_kwh": 3.950171775243351,
+      "rmse_kwh": 9.265519346378055,
+      "r2": 0.9026291101451304
+    },
+    {
+      "inputs": "recent_and_calendar",
+      "objective": "regression_l1",
+      "model_weight": 0.5,
+      "mae_kwh": 4.265458936955547,
+      "rmse_kwh": 9.885764720148275,
+      "r2": 0.889156521916777
+    }
+  ],
+  "test": {
+    "selected": {
+      "mae_kwh": 4.057292489699103,
+      "rmse_kwh": 8.632827433898251,
+      "r2": 0.9243826203144689,
+      "max_absolute_error_kwh": 63.43230434083604
+    },
+    "legacy_lightgbm": {
+      "mae_kwh": 4.277106841149969,
+      "rmse_kwh": 8.698102876511742,
+      "r2": 0.9232347648503682,
+      "max_absolute_error_kwh": 59.953910194174746
+    },
+    "persistence": {
+      "mae_kwh": 5.482202031764201,
+      "rmse_kwh": 12.357048237183141,
+      "r2": 0.8450666224257211,
+      "max_absolute_error_kwh": 118.39999999999999
+    }
+  },
+  "final_48h_diagnostic": {
+    "selected": {
+      "mae_kwh": 0.31123486944560985,
+      "rmse_kwh": 0.5061135011435263,
+      "r2": -0.4208078636796717,
+      "max_absolute_error_kwh": 2.4250167362950945
+    },
+    "legacy_lightgbm": {
+      "mae_kwh": 1.0073480073359475,
+      "rmse_kwh": 2.1567440974159946,
+      "r2": -24.801012126092633,
+      "max_absolute_error_kwh": 15.068424088286141
+    },
+    "persistence": {
+      "mae_kwh": 0.22041666666666662,
+      "rmse_kwh": 0.3514241857546707,
+      "r2": 0.314980710317723,
+      "max_absolute_error_kwh": 1.2600000000000002
+    }
+  },
+  "maximum_legacy_overprediction": {
+    "timestamp": "2018-10-22 19:45:00"
+  },
+  "notes": [
+    "Only the clock is known for the target interval; all metered inputs are lagged.",
+    "One-step replay: newly observed values are available for the next forecast.",
+    "The project has previously inspected this test period. It is a retrospective benchmark, not independent site validation.",
+    "The last 48 hours are a diagnostic slice, not a model selection set.",
+    "This observational dataset does not validate operating interventions or control."
+  ]
+}

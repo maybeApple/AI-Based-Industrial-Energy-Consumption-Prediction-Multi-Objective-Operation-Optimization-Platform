@@ -1,0 +1,22 @@
+{
+  "mae_kwh": 0.5449114063546265,
+  "rmse_kwh": 0.688912326703206,
+  "r2": 0.990759905527222,
+  "test_rows": 900,
+  "interval_coverage": 0.8944444444444445,
+  "baseline_mae_kwh": 5.949622255750051,
+  "split": "chronological 70% train / 15% calibration / 15% test",
+  "source": "synthetic_operations",
+  "features": [
+    "machine_load",
+    "machine_speed",
+    "production_rate",
+    "temperature",
+    "power_factor"
+  ],
+  "train_rows": 4200,
+  "calibration_rows": 900,
+  "training_end": "2025-02-13 17:45:00",
+  "test_start": "2025-02-23 03:00:00",
+  "anomaly_note": "Unsupervised outlier flag; not validated fault diagnosis."
+}
